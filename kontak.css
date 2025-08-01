@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Britania Ligatura';
+    src: url('font/Britania_Ligatura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+body {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+header {
+  background: url('img/Kontak.png') no-repeat center center/cover;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: #FFD87A;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Britania Ligatura';
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #FFD87A;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.hero-text {
+position: absolute;
+bottom: 1rem;
+left: 1rem;
+text-align: left;
+max-width: 50%;
+font-family: 'Britania Ligatura';
+
+}
+
+.btn {
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+    text-align: left;
+    max-width: 50%;
+    }
+    button {
+        background-color: #4D562F;
+        border: none;
+        padding: 20px;
+        width: 280px;
+        height: 80px;
+        color: white;
+        font-family: 'Calibri Light', 'Calibri';
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* bayangan halus */
+        border-radius: 8px; /* opsional biar tombolnya lembut */
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      button:hover {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        transform: translateY(-2px); /* efek angkat sedikit pas hover */
+      }
+      
+button a {
+    color: #CEB76E;
+    text-decoration: none;
+    font-family: 'Britania Ligatura';
+    font-size: 30px;
+}
+.hero-text h1 {
+  font-size: 90px;
+  color: #FFD87A;
+}
+
+.section {
+  display: flex;
+  background-color: #3C4A2D;
+  color: #FFD87A;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hidangan1 {
+    margin-top: 30px;
+}
+
+.footer {
+
+  background-color: #C8A44E;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #3C4A2D;
+    font-family: 'Britania Ligatura';
+}
+.ft {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 70px 15px 70px;
+}
+.icons {
+  margin-top: 1rem;
+}
+
+.icons img {
+  width: 50px;
+  margin: 0 5px;
+}
+.bannerbwh {
+    display: flex;
+    background-color: #4D562F;
+    color: white;
+    font-family: 'Calibri Light', 'Calibri';
+    font-size: 24px;
+  }
+  .bannerbwh p {
+
+    margin: 20px 30px 20px 30px;
+  }
+
+.ft p {
+    font-family: 'Calibri Light', 'Calibri';
+}

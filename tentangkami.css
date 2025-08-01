@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'BritaniaLigatura';
+    src: url('font/Britania_Ligatura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+  }
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+body {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+header {
+  background: url('img/TentangKami.png') no-repeat center center/cover;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+nav a {
+  color: #FFD87A;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Britania Ligatura';
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #FFD87A;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.hero-text {
+position: absolute;
+bottom: 2rem;
+left: 2rem;
+text-align: left;
+max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 80px;
+  color: #FFD87A;
+  font-family: 'Britania Ligatura';
+}
+
+.section {
+  display: flex;
+  background-color: #3C4A2D;
+  color: #FFD87A;
+}
+
+.section h2 {
+  font-size: 2rem;
+  font-family: 'Britania Ligatura';
+  margin-bottom: 1rem;
+}
+
+.section p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.section img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hidangan1 {
+    margin-top: 30px;
+}
+
+.footer {
+
+  background-color: #C8A44E;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #3C4A2D;
+}
+.ft {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 70px 15px 70px;
+}
+.icons {
+  margin-top: 1rem;
+}
+
+.icons img {
+  width: 50px;
+  margin: 0 5px;
+}
+.bannerbwh {
+    display: flex;
+    background-color: #4D562F;
+    color: white;
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+    font-size: 24px;
+  }
+  .bannerbwh p {
+
+    margin: 20px 30px 20px 30px;
+  }
+
+.ft p {
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+}
+
+.gmb1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.gmb1 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.glry {
+    position: absolute;
+    top: 80%; /* atur sesuai kebutuhan */
+    left: 5%;
+    color: #CEB76E;
+    font-size: 30px;
+    z-index: 2;
+  }
+  .glry h2 {
+    font-family: 'Britania Ligatura';
+  }
+  .gmbbwah {
+    display: flex;
+    gap: 0;
+width: 100%;
+  }
+  .gmbbwah img {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  .gbwh img {
+
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  

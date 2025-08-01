@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Britania Ligatura';
+    src: url('font/Britania_Ligatura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out; /* animasi transisi halus */
+  }
+
+body {
+  background-color: #1E1E1E;
+  color: #fff;
+}
+
+header {
+  background: url('img/Home.png') no-repeat center center/cover;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  nav a {
+    color: #FFD87A;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Britania Ligatura';
+  }
+  
+  .logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #FFD87A;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+  
+  .hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  text-align: left;
+  max-width: 50%;
+  }
+  .hero-text h1 {
+    font-size: 70px;
+    color: #FFD87A;
+    font-family: 'Britania Ligatura';
+  }
+  .bannerbwh {
+    display: flex;
+    background-color: #4D562F;
+    color: white;
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+    font-size: 24px;
+    margin: 0;
+  }
+  .bannerbwh p {
+margin: 30px;
+  }
+.p1 {
+  display: flex;
+  background-color: #4D562F;
+  height: 100vh;
+  gap: 15px;
+}
+.judulhidangan {
+  display: flex;
+}
+.kiri1 {
+  width: 50%;
+  color: #CEB76E;
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: 'Britania Ligatura';
+}
+.kiri1 img {
+  width: 80px;
+  padding: 10px;
+}
+.kiri1 h2 {
+  font-size: 70px;
+  color: #FFD87A;
+  font-family: 'Britania Ligatura';
+}
+.kiri1 p {
+    font-size: 24px;
+    color: white;
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+    margin-top: 40px;
+  
+}
+.kanan1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* gambar rata tengah */
+}
+
+.kanan1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.navhidangan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navhidangan a {
+  color: #CEB76E;
+  text-decoration: none;
+  font-family: 'Britania Ligatura';
+  font-size: 18px;
+}
+.tblselengkapnya {
+  display: flex;
+  align-items: center;
+}
+.tblselengkapnya img {
+  width: 40px;
+}
+
+.p2 {
+  display: flex;
+  background-color: #4D562F;
+  height: 130vh;
+  position: relative;
+}
+.kiri2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.kiri2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.kanan2 {
+  margin-top: 0px;
+  width: 50%;
+  color: #CEB76E;
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: 'Britania Ligatura';
+}
+
+.kanan2 h2 {
+  font-size: 70px;
+  color: #FFD87A;
+  font-family: 'Britania Ligatura';
+}
+.kanan2 p {
+    font-size: 24px;
+    color: white;
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+    margin-top: 40px;
+  
+}
+.navhidangan2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navhidangan2 a {
+  color: #CEB76E;
+  text-decoration: none;
+  font-family: 'Britania Ligatura';
+  font-size: 18px;
+}
+.tblselengkapnya2 {
+  display: flex;
+  align-items: center;
+}
+.tblselengkapnya2 img {
+  padding: 10px;
+  width: 40px;
+}
+  .footer {
+
+    background-color: #C8A44E;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: #3C4A2D;
+  }
+  .ft {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 70px 15px 70px;
+  }
+  .icons {
+    margin-top: 1rem;
+  }
+  
+  .icons img {
+    width: 50px;
+    margin: 0 5px;
+  }
+  .ft p {
+    font-family: 'Calibri Light', 'Calibri', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .kiri1 h2,
+  .kanan2 h2 {
+    font-size: 50px;
+  }
+
+  .kiri1 p,
+  .kanan2 p,
+  .bannerbwh p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    max-width: 80%;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .p1,
+  .p2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .kiri1,
+  .kanan1,
+  .kiri2,
+  .kanan2 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .kiri1 p,
+  .kanan2 p {
+    padding: 0 15px;
+    font-size: 18px;
+  }
+
+  .kiri1 h2,
+  .kanan2 h2 {
+    font-size: 40px;
+  }
+
+  .judulhidangan {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerbwh {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .ft {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .navhidangan,
+  .navhidangan2 {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tblselengkapnya,
+  .tblselengkapnya2 {
+    justify-content: center;
+  }
+
+  .icons img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .kiri1 h2,
+  .kanan2 h2 {
+    font-size: 32px;
+  }
+
+  .kiri1 p,
+  .kanan2 p,
+  .bannerbwh p {
+    font-size: 16px;
+  }
+
+  .icons img {
+    width: 30px;
+  }
+}
