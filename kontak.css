@@ -122,6 +122,15 @@ button a {
 .hidangan1 {
     margin-top: 30px;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+header {
+  height: 100vh; /* bisa diganti jadi min-height untuk fleksibel */
+  min-height: 400px;
+}
 
 .footer {
 
@@ -159,4 +168,126 @@ button a {
 
 .ft p {
     font-family: 'Calibri Light', 'Calibri';
+}
+
+/* Tombol menu hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #FFD87A;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 60px;
+  }
+
+  .btn {
+    left: 5%;
+    bottom: 40%;
+    max-width: 80%;
+  }
+
+  button {
+    width: 220px;
+    height: 70px;
+    padding: 15px;
+  }
+
+  button a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(30, 30, 30, 0.95);
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    font-size: 16px;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .btn {
+    left: 1rem;
+    bottom: 35%;
+    max-width: 90%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .footer {
+    font-size: 0.7rem;
+  }
+
+  .ft {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .icons img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  button {
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  button a {
+    font-size: 20px;
+  }
+
+  .bannerbwh {
+    flex-direction: column;
+    font-size: 16px;
+  }
+
+  .bannerbwh p {
+    margin: 1rem;
+  }
 }
