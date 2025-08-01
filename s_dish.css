@@ -74,7 +74,7 @@ margin: 30px;
 .p1 {
   display: flex;
   background-color: #4D562F;
-  height: 100vh;
+  height: 70vh;
   gap: 15px;
 }
 .judulhidangan {
@@ -139,4 +139,103 @@ margin: 30px;
   }
   .ft p {
     font-family: 'Calibri Light', 'Calibri', sans-serif;
+}
+@media (max-width: 1024px) {
+  .hero-text h1 {
+    font-size: 50px;
+  }
+
+  .kiri1 h2 {
+    font-size: 50px;
+  }
+
+  .kiri1 p
+  .bannerbwh p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .hero-text {
+    max-width: 80%;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .p1 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .kiri1,
+  .kanan1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .kiri1 p {
+    padding: 0 15px;
+    font-size: 18px;
+  }
+
+  .kiri1 h2{
+    font-size: 40px;
+  }
+
+  .judulhidangan {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bannerbwh {
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .ft {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+  }
+
+
+  .icons img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .kiri1 h2 {
+    font-size: 32px;
+  }
+
+  .kiri1 p,
+  .bannerbwh p {
+    font-size: 16px;
+  }
+
+  .icons img {
+    width: 30px;
+  }
 }
