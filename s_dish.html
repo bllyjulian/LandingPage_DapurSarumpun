@@ -11,7 +11,8 @@
         <div class="logo">
           <img src="pg_home/LOGO-picsay.png" alt="Logo" style="height: 60px;"><br>
         </div>
-        <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navbar">
           <a href="index.html">Home</a>
           <a href="s_dish.html">Signature Dish</a>
           <a href="tentangkami.html">Tentang Kami</a>
@@ -95,3 +96,13 @@
             </div>
           </div>
         </div>
+          
+        </body>
+        <script>
+          function toggleMenu() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('show');
+          }
+        </script>
+        
+      </html>

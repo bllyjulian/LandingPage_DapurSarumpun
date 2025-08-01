@@ -140,6 +140,16 @@ margin: 30px;
   .ft p {
     font-family: 'Calibri Light', 'Calibri', sans-serif;
 }
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #FFD87A;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
 @media (max-width: 1024px) {
   .hero-text h1 {
     font-size: 50px;
@@ -156,10 +166,29 @@ margin: 30px;
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
   nav {
+    display: none;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1rem;
+    background-color: rgba(30, 30, 30, 0.95);
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    font-size: 16px;
   }
 
   .hero-text {
